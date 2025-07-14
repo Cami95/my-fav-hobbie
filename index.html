@@ -21,11 +21,12 @@
         text-align: center;
       }
       .container {
+        display: block;
+        margin: auto;
         max-width: 600px;
         background: lightblue;
         padding: 29px;
         border-radius: 10px;
-        text-align: center;
       }
 
       img {
@@ -129,10 +130,23 @@
       .grid img:hover {
         transform: scale(1.1);
       }
+
+      .dark {
+        background: black;
+        color: white;
+      }
+
+      .dark .container {
+        background: darkgreen;
+      }
+
+      .dark a {
+        color: white;
+      }
     </style>
   </head>
   <body>
-    <button class="theme-button">Dark Theme</button>
+    <button class="theme-button">Change the Theme</button>
     <div class="container">
       <h1>Shuffle Dancing 🔀 🕺</h1>
       <h2>My Favorite type of dance!</h2>
@@ -187,7 +201,7 @@
       <a href="https://en.wikipedia.org/wiki/Melbourne_shuffle" target="_blank"
         >Learn more about shuffling on Wikipedia!
       </a>
-      <button>Learn how to Shuffle!!</button>
+      <button class="learn-shuffle">Learn how to Shuffle!!</button>
     </div>
 
     <footer>
@@ -200,5 +214,19 @@
       </a>
       They are towards the middle lol. May make a second page for shuffling! 😉
     </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton = addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
