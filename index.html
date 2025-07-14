@@ -18,12 +18,14 @@
       p {
         font-size: 20px;
         line-height: 1.5;
+        text-align: center;
       }
       .container {
         max-width: 600px;
         background: lightblue;
         padding: 29px;
         border-radius: 10px;
+        text-align: center;
       }
 
       img {
@@ -32,7 +34,7 @@
 
       button {
         display: block;
-        margin: 0 auto;
+        margin: 15px auto;
         border: 4px solid #ff69b4;
         background: white;
         font-size: 25px;
@@ -112,6 +114,21 @@
         transform: scale(1);
         filter: contrast(2000%);
       }
+
+      .grid {
+        margin: 5px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .grid img {
+        object-fit: cover;
+        aspect-ratio: 1/1;
+      }
+
+      .grid img:hover {
+        transform: scale(1.1);
+      }
     </style>
   </head>
   <body>
@@ -120,6 +137,47 @@
       <h1>Shuffle Dancing 🔀 🕺</h1>
       <h2>My Favorite type of dance!</h2>
 
+      <a href="https://www.vitacost.com/blog/shuffle-dancing/" target="_blank">
+        <img
+          src="https://www.vitacost.com/blog/wp-content/uploads/2024/08/Shuffle-Dancing.jpg"
+          alt=""
+          class="shuffle-top-picture"
+        />
+      </a>
+      <div class="grid">
+        <a
+          href="https://www.danceresourcecenter.org/trending-topics/shufflers-are-doing-the-running-man-at-l-a-s-iconic-places/"
+          target="_blank"
+        >
+          <img
+            src="https://www.danceresourcecenter.org/wp-content/uploads/2023/09/Screen-Shot-2023-09-22-at-11.09.53-AM-1024x682.png"
+            alt=""
+            class="shuffle-second-picture"
+          />
+        </a>
+
+        <a
+          href="https://www.yogamixorlando.com/events/2019/7/18/learn-to-shuffle"
+          target="_blank"
+        >
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5908cbd1a5790ae32b723a71/1561564093672-AEHYWMVZ40SMG6RTGDWW/65012012_2461622327393916_4947807706586021888_n.jpg?format=2500w"
+            alt=""
+            class="shuffle-third-picture"
+          />
+        </a>
+
+        <a
+          href="https://pickupdance.com/p/pickupdance-mens-membership-subscription"
+          target="_blank"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJzzN8uqTSLDWUFm5H_Xzlxkf6I4fmrYOufQ&s"
+            alt=""
+            class="shuffle-bottom-picture"
+          />
+        </a>
+      </div>
       <p>
         The Shuffle is a dance move that stems from the "Melbourne Shuffle," a
         rave and club dance that originated in the late 80s during the
@@ -129,48 +187,6 @@
       <a href="https://en.wikipedia.org/wiki/Melbourne_shuffle" target="_blank"
         >Learn more about shuffling on Wikipedia!
       </a>
-
-      <a href="https://www.vitacost.com/blog/shuffle-dancing/" target="_blank">
-        <img
-          src="https://www.vitacost.com/blog/wp-content/uploads/2024/08/Shuffle-Dancing.jpg"
-          alt=""
-          class="shuffle-top-picture"
-        />
-      </a>
-
-      <a
-        href="https://www.danceresourcecenter.org/trending-topics/shufflers-are-doing-the-running-man-at-l-a-s-iconic-places/"
-        target="_blank"
-      >
-        <img
-          src="https://www.danceresourcecenter.org/wp-content/uploads/2023/09/Screen-Shot-2023-09-22-at-11.09.53-AM-1024x682.png"
-          alt=""
-          class="shuffle-second-picture"
-        />
-      </a>
-
-      <a
-        href="https://www.yogamixorlando.com/events/2019/7/18/learn-to-shuffle"
-        target="_blank"
-      >
-        <img
-          src="https://images.squarespace-cdn.com/content/v1/5908cbd1a5790ae32b723a71/1561564093672-AEHYWMVZ40SMG6RTGDWW/65012012_2461622327393916_4947807706586021888_n.jpg?format=2500w"
-          alt=""
-          class="shuffle-third-picture"
-        />
-      </a>
-
-      <a
-        href="https://pickupdance.com/p/pickupdance-mens-membership-subscription"
-        target="_blank"
-      >
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJzzN8uqTSLDWUFm5H_Xzlxkf6I4fmrYOufQ&s"
-          alt=""
-          class="shuffle-bottom-picture"
-        />
-      </a>
-
       <button>Learn how to Shuffle!!</button>
     </div>
 
